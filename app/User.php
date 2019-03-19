@@ -56,4 +56,9 @@ class User extends Authenticatable
 
         return $this->hasMany('App\invoice');
     }
+
+    public function wifiUser(){
+
+        return $this->hasMany('App\wifiUser');
+    }
 }

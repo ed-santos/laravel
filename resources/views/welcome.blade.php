@@ -41,7 +41,7 @@
                 background-size: cover;
                 postion: relative;
                 height: 100vh;
-                padding: 300px 25px;
+                padding: 300px 30px;
                 font-family: Mukta, sans-serif;
             }
 
@@ -286,14 +286,14 @@
                 padding-top: 55px;
                 font-weight: 700;
                 letter-spacing: .2rem;
-                font-size: 40px;
+                font-size: 30px;
                 text-decoration: none;
             }
             .coHeader {
                 color: #3d5467;
                 font-weight: 700;
                 letter-spacing: .2rem;
-                font-size: 30px;
+                font-size: 24px;
                 text-decoration: none;
                 text-transform: uppercase;
             }
@@ -310,7 +310,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="/"><img src="spearWifiLogoFull.png" height="50px"></a>
+                <a class="navbar-brand" href="/"><img src="spearWifiLogoFull.png" height="40px"></a>
             </div>
             <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav navbar-right">
@@ -384,7 +384,7 @@
     <div id="about" class="container-fluid">
         <div class="row">
             <div class="col-sm-8">
-                <h2>Why<img src="spearWifiNameOnly.png" height="45px">?</h2><br>
+                <h2>Why<img src="spearWifiNameOnly.png" height="40px">?</h2><br>
                 <h4>We"ll boost your digital marketing capabilities by unlocking power information at a minimal cost - GROWING YOUR BUSINESS! </h4><br>
                 <p>After getting to know one another, we will configure your existing wifi infrastructure to start collecting information from your wifi users. The information we collect will help feed specialized metrics that we create (or creaete together) and present it to you in a way that is easy to understand and use. Powerful marketing information that will fuel your digital marketing campaigns, understand who your key demographics are, gathering reviews and much more.</p>
                 <br>

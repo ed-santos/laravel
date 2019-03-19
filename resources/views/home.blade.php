@@ -16,7 +16,41 @@
                         </div>
                     @endif
 
-                    Welcome! <!-- chartJS area -->
+                            <h4>Your Wifi Users</h4>
+                            <table class="table table-bordered">
+                                <thead>
+                                <tr>
+                                    <th scope="col">Location</th>
+                                    <th scope="col">First Name</th>
+                                    <th scope="col">Last Name</th>
+                                    <th scope="col"></th>
+
+                                </tr>
+                                </thead>
+                                <tbody>
+                                @foreach($posts as $singlePost)
+
+                                    <tr>
+                                        <td>{{$singlePost->id}}</td>
+                                        <td>{{$singlePost->user->name}}</td>
+                                        <!--take note of the url structure below. it dynamically changes the link structure to include post ID and pass info via get method-->
+                                        <td><a href="/post?id={{$singlePost->id}}">{{$singlePost->title}}</a></td>
+                                        <td>{{$singlePost->description}}</td>
+
+                                        @if(Auth::check())
+
+                                            @if(Auth::user()-> id == $singlePost->user_id)
+                                                <td><a href="/update/{{$singlePost->id}}" class="btn btn-primary">update</a></td>
+                                                <td><a href="/deletePost/{{$singlePost->id}}" class="btn btn-danger">delete</a></td>
+                                            @endif
+                                        @endif
+                                    </tr>
+
+                                @endforeach
+
+                                </tbody>
+                            </table>
+                        </div>
                 </div>
             </div>
         </div>
