@@ -17,11 +17,15 @@ class WifiUsers extends Migration
 
         Schema::create('wifiusers', function (Blueprint $table) {
             $table->Increments('wifiid');
+            $table->string('provider');
             $table->string('fname');
             $table->string('lname');
             $table->string('email')->unique();
             $table->string('username');
             $table->string('password');
+            $table->string('data1');
+            $table->string('data2');
+            $table->string('data3');
             $table->rememberToken();
             $table->timestamps();
         });
