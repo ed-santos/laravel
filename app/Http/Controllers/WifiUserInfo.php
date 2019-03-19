@@ -11,7 +11,7 @@ class WifiUserInfo extends Controller
 
     public function receiveData(){
         return 'hello';
-        
+
 
     }
 
