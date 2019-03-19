@@ -10,6 +10,9 @@ class WifiUserInfo extends Controller
     //
 
     public function receiveData(){
+
+
+        return response('hello');
         $userData = $_POST['client'];
 
         $name = $element['name'];
