@@ -11,7 +11,8 @@ class WifiUserInfo extends Controller
 
     public function receiveData(){
 
-
+        return response('Hello World', 200)
+            ->header('Content-Type', 'text/plain');
         return response('hello');
         $userData = $_POST['client'];
 
