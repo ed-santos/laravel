@@ -19,5 +19,5 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Route::post('/getData', 'WifiUserInfo@receive');
+Route::post('/getData', 'WifiUserInfo@receiveData');
 

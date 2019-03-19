@@ -28,11 +28,11 @@
                                 </tr>
                                 </thead>
                                 <tbody>
-                                @foreach($posts as $singlePost)
+                                @foreach($wifiUsers as $wifiUsers)
 
                                     <tr>
-                                        <td>{{$singlePost->id}}</td>
-                                        <td>{{$singlePost->user->name}}</td>
+                                        <td>{{$wifiUsers->name}}</td>
+                                        <td>{{$wifiUsers->email}}</td>
                                         <!--take note of the url structure below. it dynamically changes the link structure to include post ID and pass info via get method-->
                                         <td><a href="/post?id={{$singlePost->id}}">{{$singlePost->title}}</a></td>
                                         <td>{{$singlePost->description}}</td>

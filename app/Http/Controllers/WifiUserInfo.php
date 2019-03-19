@@ -8,54 +8,29 @@ class WifiUserInfo extends Controller
 {
     //
 
-    public function (){
-
+    public function receiveData(){
+        return 'hello';
         $userData = $_POST['client'];
 
-        $name = $element['fname'];
+        $name = $element['name'];
         $email = $element['email'];
         $provider = $element['provider'];
         $locationid = $element['loctionid'];
 
 
-    }
 
+        //Create new object to pass data to DB
+        $wifiUsers = new Data();
+        //objects to pass to table attributes with assigned declared values above
+        $wifiUsers->fname = $name;
+        $wifiUsers->email = $email;
+        $wifiUsers->provider = $provider;
+        $wifiUsers->locationid = $locationid;
 
-    public function wifiUserLin(){
+        $wifiUsers-> save();
 
-        $userData = $_POST['user'];
-
-        $fname = $element['fname'];
-        $lname = $element['lname'];
-        $email = $element['email'];
-        $provider = $element['provider'];
-        $locationid = $element['loctionid'];
-
-
-    }
-
-    public function wifiUserFb(){
-
-        $userData = $_POST['user'];
-
-        $name = $element['fname'];
-        $email = $element['email'];
-        $provider = $element['provider'];
-        $locationid = $element['loctionid'];
-
+        return redirect('/home');
 
     }
 
-    public function wifiUserGoo(){
-
-        $userData = $_POST['user'];
-
-        $fname = $element['fname'];
-        $lname = $element['lname'];
-        $email = $element['email'];
-        $provider = $element['provider'];
-        $locationid = $element['loctionid'];
-
-
-    }
 }
