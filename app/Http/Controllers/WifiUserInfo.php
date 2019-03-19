@@ -8,7 +8,7 @@ class WifiUserInfo extends Controller
 {
     //
 
-    public function wifiUserTwt(){
+    public function (){
 
         $userData = $_POST['client'];
 
