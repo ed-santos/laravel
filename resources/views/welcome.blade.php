@@ -384,7 +384,7 @@
     <div id="about" class="container-fluid">
         <div class="row">
             <div class="col-sm-8">
-                <h2>Why<img src="spearWifiNameOnly.png" height="40px">?</h2><br>
+                <h2>Why<img src="spearwifiNameOnly.png" height="40px">?</h2><br>
                 <h4>We"ll boost your digital marketing capabilities by unlocking power information at a minimal cost - GROWING YOUR BUSINESS! </h4><br>
                 <p>After getting to know one another, we will configure your existing wifi infrastructure to start collecting information from your wifi users. The information we collect will help feed specialized metrics that we create (or creaete together) and present it to you in a way that is easy to understand and use. Powerful marketing information that will fuel your digital marketing campaigns, understand who your key demographics are, gathering reviews and much more.</p>
                 <br>
