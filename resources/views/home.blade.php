@@ -21,29 +21,20 @@
                                 <thead>
                                 <tr>
                                     <th scope="col">Location</th>
-                                    <th scope="col">First Name</th>
-                                    <th scope="col">Last Name</th>
-                                    <th scope="col"></th>
-
+                                    <th scope="col">Name</th>
+                                    <th scope="col">Email</th>
+                                    <th scope="col">Log Date</th>
                                 </tr>
                                 </thead>
                                 <tbody>
-                                @foreach($wifiUsers as $wifiUsers)
+                                @foreach($wifiusers as $connectRec)
 
                                     <tr>
-                                        <td>{{$wifiUsers->name}}</td>
-                                        <td>{{$wifiUsers->email}}</td>
-                                        <!--take note of the url structure below. it dynamically changes the link structure to include post ID and pass info via get method-->
-                                        <td><a href="/post?id={{$singlePost->id}}">{{$singlePost->title}}</a></td>
-                                        <td>{{$singlePost->description}}</td>
+                                        <td>{{$connectRec->locationid}}</td>
+                                        <td>{{$connectRec->fname}}</td>
+                                        <td>{{$connectRec->email}}</td>
+                                        <td>{{$connectRec->timestamps}}</td>
 
-                                        @if(Auth::check())
-
-                                            @if(Auth::user()-> id == $singlePost->user_id)
-                                                <td><a href="/update/{{$singlePost->id}}" class="btn btn-primary">update</a></td>
-                                                <td><a href="/deletePost/{{$singlePost->id}}" class="btn btn-danger">delete</a></td>
-                                            @endif
-                                        @endif
                                     </tr>
 
                                 @endforeach

@@ -16,21 +16,27 @@ class WifiUserInfo extends Controller
         $name = $_POST['name'];
         $email = $_POST['email'];
         $provider = $_POST['provider'];
-        $locationid = $_POST['loctionid'];
-
+        $locationid = $_POST['locationid'];
 
 
         //Create new object to pass data to DB
-        $wifiUsers = new wifiUser();
+        $wifiusers = new wifiUser();
         //objects to pass to table attributes with assigned declared values above
-        $wifiUsers->fname = $name;
-        $wifiUsers->email = $email;
-        $wifiUsers->provider = $provider;
-        $wifiUsers->locationid = $locationid;
+        $wifiusers->fname = $name;
+        $wifiusers->email = $email;
+        $wifiusers->provider = $provider;
+        $wifiusers->locationid = $locationid;
 
         $wifiUsers->save();
 
         //return redirect('/home');
+    }
+
+    public function showData(){
+
+        $allTraffic = wifiUser::with('user')->get();
+
+        return view('home')->with('wifiusers',$allTraffic);
     }
 
 
