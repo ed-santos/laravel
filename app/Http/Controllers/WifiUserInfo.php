@@ -11,6 +11,8 @@ class WifiUserInfo extends Controller
 
     public function receiveData(){
 
+
+        return response()->json('hloeeee',344);
         $name = $_POST['name'];
         $email = $_POST['email'];
         $provider = $_POST['provider'];
@@ -30,5 +32,6 @@ class WifiUserInfo extends Controller
 
         //return redirect('/home');
     }
+
 
 }
