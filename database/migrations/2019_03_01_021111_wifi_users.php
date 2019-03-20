@@ -23,7 +23,7 @@ class WifiUsers extends Migration
             $table->string('id');
             $table->string('fname');
             $table->string('lname');
-            $table->string('email')->unique();
+            $table->string('email');
             $table->string('username');
             $table->string('password');
             $table->string('data1');

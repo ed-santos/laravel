@@ -11,15 +11,10 @@ class WifiUserInfo extends Controller
 
     public function receiveData(){
 
-        return response('Hello World', 200)
-            ->header('Content-Type', 'text/plain');
-        return response('hello');
-        $userData = $_POST['client'];
-
-        $name = $element['name'];
-        $email = $element['email'];
-        $provider = $element['provider'];
-        $locationid = $element['loctionid'];
+        $name = $_POST['name'];
+        $email = $_POST['email'];
+        $provider = $_POST['provider'];
+        $locationid = $_POST['loctionid'];
 
 
 
@@ -31,7 +26,7 @@ class WifiUserInfo extends Controller
         $wifiUsers->provider = $provider;
         $wifiUsers->locationid = $locationid;
 
-        $wifiUsers-> save();
+        $wifiUsers->save();
 
         //return redirect('/home');
     }
