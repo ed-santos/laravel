@@ -15,7 +15,7 @@ class LoginLogs extends Migration
     {
         //
         Schema::create('loginlog', function (Blueprint $table) {
-            $table->Increments('logid');
+            $table->Increments('id');
             $table->integer('userid');
             $table->timestamps();
         });

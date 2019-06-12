@@ -16,7 +16,7 @@ class AdminServices extends Migration
         //
 
         Schema::create('adminservice', function (Blueprint $table) {
-            $table->Increments('adminservid');
+            $table->Increments('id');
             $table->integer('userid');
             $table->integer('servid');
             $table->string('notes');

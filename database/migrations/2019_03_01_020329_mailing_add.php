@@ -16,7 +16,7 @@ class MailingAdd extends Migration
         //
 
         Schema::create('mailingadd', function (Blueprint $table) {
-            $table->Increments('mailid');
+            $table->Increments('id');
             $table->integer('userid');
             $table->string('fname');
             $table->string('lname');

@@ -15,7 +15,7 @@ class Invoice extends Migration
     {
         //
         Schema::create('invoices', function (Blueprint $table) {
-            $table->Increments('invid');
+            $table->Increments('id');
             $table->integer('userid');
             $table->integer('mailid');
             $table->integer('servid');

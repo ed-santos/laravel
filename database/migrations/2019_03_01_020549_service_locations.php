@@ -16,7 +16,7 @@ class ServiceLocations extends Migration
         //
 
         Schema::create('servlocation', function (Blueprint $table) {
-            $table->Increments('servid');
+            $table->Increments('id');
             $table->integer('userid');
             $table->string('company');
             $table->string('contact');

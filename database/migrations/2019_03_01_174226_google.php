@@ -16,7 +16,7 @@ class Google extends Migration
         //
 
         Schema::create('google', function (Blueprint $table) {
-            $table->Increments('gooid');
+            $table->Increments('id');
             $table->integer('wifiid');
             $table->string('gooinfo1');
             $table->string('gooinfo2');

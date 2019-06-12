@@ -16,7 +16,7 @@ class Twitter extends Migration
         //
 
         Schema::create('twitter', function (Blueprint $table) {
-            $table->Increments('twtid');
+            $table->Increments('id');
             $table->integer('wifiid');
             $table->string('twtinfo1');
             $table->string('twtinfo2');

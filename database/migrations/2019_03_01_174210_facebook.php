@@ -16,7 +16,7 @@ class Facebook extends Migration
         //
 
         Schema::create('facebook', function (Blueprint $table) {
-            $table->Increments('fbid');
+            $table->Increments('id');
             $table->integer('wifiid');
             $table->string('fbinfo1');
             $table->string('fbinfo2');

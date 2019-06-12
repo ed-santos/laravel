@@ -16,7 +16,7 @@ class Linkedin extends Migration
         //
 
         Schema::create('linkedin', function (Blueprint $table) {
-            $table->Increments('linid');
+            $table->Increments('id');
             $table->integer('wifiid');
             $table->string('lininfo1');
             $table->string('lininfo2');
